@@ -1,0 +1,109 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+.yy-login {
+    width: 100%;
+    height: 100%;
+    background-color: #444a5a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #7397dd; */
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 405px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.login-title {
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.login_form{
+    background: #717581;
+    width: 100%;
+    height: 250px;
+    padding: 30px 40px;
+}
+.login_form form>div{
+    width: 100%;
+    border: 1px solid #fff;
+    height: 36px;
+    border-radius: 18px;
+    margin:0 0 30px;
+    padding: 5px 10px;
+}
+input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus, 
+	input:-webkit-autofill:active {
+		transition-delay: 999999999s;
+	    transition: color  999999999s ease-out, background-color  999999999s ease-out;
+	    -webkit-transition-delay:  999999999s;
+	    -webkit-transition: color  999999999s ease-out, background-color  999999999s ease-out;
+	    -webkit-text-fill-color: #fff;
+	}
+.login_form form>div .ant-form-item-control-input div,.login_form form>div>div{
+    height: 100%;
+    width: 100%;
+}
+.login_form form>div .ant-input-affix-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.ant-form-item-explain-error{
+    margin-top: 10px;
+    color: red;
+}
+.login_form form>div input{
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+}
+.login_form form>div input:focus-visible{
+    outline: none;
+}
+.login_form form>div input:-internal-autofill-selected {
+    background-color:  internal-light-dark(rgb(232, 240, 254), rgba(5, 21, 49, 0.4)) !important;
+    color: #fff !important;
+}
+.anticon svg{
+    color: #fff;
+}
+.login_form form>div input::placeholder{
+    color: #fff;
+}
+.login-btn {
+    width: 100%;
+    height: 36px;
+    background: #00c8c4;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.ant-col-rtl .login-form-forgot {
+    float: left;
+}

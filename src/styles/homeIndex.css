@@ -1,0 +1,116 @@
+.yy-header {
+    display: flex;
+    height: 60px;
+    background-color: #4a5259;
+    color: #ffca42;
+    justify-content: space-between;
+}
+
+.yy-logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yy-header  .username{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yy-logo-img {
+    width: 50px;
+    height: 50px;
+    animation: logo 4s infinite linear;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.yy-nav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.yy-action {
+    width: 25%;
+    display: flex;
+}
+
+.yy-action-item {
+    width: 10%;
+    font-size: 18px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.yy-action-item.active {
+    color: #fff;
+}
+
+.yy-action-item:hover {
+    color: #fff;
+}
+
+.ant-badge {
+    font-size: 18px;
+}
+
+.yy-nav-item {
+    width: 12%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.yy-nav-item.active {
+    color: #fff;
+    position: relative;
+}
+
+.yy-nav-item:hover {
+    color: #fff;
+}
+
+.index-box {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #fff;
+    padding: 30px 50px;
+}
+
+.index-chart-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-chart-box-item{
+    width: 45%;
+    background-color: #fff;
+    padding: 15px 15px 30px;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+}
+
+.index-chart-box-item .item_title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.index-chart-box-item .desc{
+    font-size: 18px;
+    font-weight: 500;
+    white-space: pre-line;
+}
